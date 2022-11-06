@@ -729,6 +729,21 @@ footer div h5 span{
     .work div{
         background-size: contain;
     }
+    .hover{
+        width: 256.34px;
+        height: 230.57px;
+    }
+
+    .hover h4{
+        font-size: 18px;
+        line-height: 21px;
+        padding-top: 79px;
+    }
+
+    .hover h5{
+        font-size: 14px;
+        line-height: 16px;
+    }
 
 
 
