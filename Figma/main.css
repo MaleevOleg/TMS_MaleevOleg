@@ -39,7 +39,7 @@ p{
     text-transform:initial;
 }
 
-button{
+button.CTA{
     font-family: 'Raleway';
     background: #FF4343;
     width: 370px;
@@ -62,11 +62,24 @@ button{
 
 }
 
-button:hover{
+.navbar-toggler-icon{
+    background-image: url(./IMG/Vector.png);
+    width: 24px;
+    height: 18px;
+}
+
+.navbar-toggler-icon:focus {
+    background-image: url(./IMG/cross.png);
+    width: 19px;
+    height: 19px;
+
+}
+
+button.CTA:hover{
     background:#E71414;
 }
 
-button:active{
+button.CTA:active{
     background: #FF4343;
     box-shadow: 4px 4px 30px #FF4343;
 }
@@ -649,7 +662,7 @@ footer div h5 span{
 
     }
 
-    header button{
+    header button.CTA{
         width:313.15px;
         height:77.58px;
         margin-top: 90px;
@@ -882,5 +895,261 @@ footer div h5 span{
 
 
   @media (max-width: 1023px){
+    .logo{
+        width:150px ;
+        height:56.28px;
+        background-size: contain;
+    }
+
+    nav.navbar{
+        border: none;
+    }
+
+    .navbar-collapse{
+        position: absolute;
+        height: 520px;
+        width: 320px;
+        top: 53px;
+        left: -20px;
+        background: url(./IMG/bg-menu.png) top center;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 34px;
+    }
+
+    .navbar-nav .nav-item a{
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .navbar-nav{
+        margin: 47px 21px;
+    }
+
+
+    .flex-row {
+        flex-direction: column!important;
+    }
+
+    header .container{
+        background-position: -438px 0px;
+        height: 574px;
+    }
+
+    header .baner{
+        margin: 0;
+    }
+
+    header .baner h1{
+        font-size: 36px;
+        line-height: 42px;
+        margin-top: 50px;
+        padding-top: 0px;
+    }
+
+    header .baner h2{
+        font-size: 14px;
+        line-height: 16px;
+        margin: 52px 25px;
+    }
+
+    header button.CTA{
+        width: 279.24px;
+        height: 58.18px;
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 67px;
+    }
+    
+    .features{
+        padding: 38px 0px 0px 4px;
+    }
+
+    .features .container{
+        padding: 0;
+        width: 320px;
+    }
+
+    .features .row{
+        flex-direction: column;
+        margin-bottom: -5px;
+    }
+
+    .features .card{
+        margin-bottom: 27px;
+        width: 100%;
+    }
+
+    .features .card-img-top {
+        width: 75.29px;
+        height: 74.37px;
+    }
+
+
+    .features .card-body{
+        padding-top: 2px;
+    }
+
+    .features h5{
+        margin-bottom: 0;
+    }
+
+    .features p{
+        margin: 0px 30px;
+        padding-top: 10px;
+    }
+
+    .works .work{
+        width:160px ;
+        height:144px ;
+    }
+
+    .hover{
+        width:160px ;
+        height:144px ;
+    }
+
+    .hover h4{
+        font-size: 18px;
+        line-height: 21px;
+        padding-top: 46px;
+    }
+
+    .hover h5{
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 0px;
+    }
+    
+    .our-team{
+    padding-top: 32px;
+    }
+
+    .our-team .container{
+        width: 320px;
+    }
+
+    .our-team .row{
+        flex-direction: column;
+    }
+
+    .our-team .col-3{
+        max-width: 100%;
+        margin: 0 auto;
+        width: 280px;
+        padding-bottom: 50px;
+    }
+
+    .our-team .col-3:last-child{
+        margin: 0 auto -15px;;
+    }
+
+    .our-team .row .card-img-top{
+        width: 280px;
+        height: 227.25px;
+    }
+
+    .our-team p{
+        padding-top: 8px;
+        margin: 32px 2px;
+    }
+    
+    .our-team img{
+        width: 39.61px;
+        height: 39.61px;
+    }
+
+    .testimonials{
+        padding-top: 0;
+    }
+
+    .carousel-item{
+        height: 537px;
+    }
+
+    .w-50{
+        width: 100%!important;
+    }
+
+    .carousel-inner .carousel-caption{
+        top: 211px;
+        left: 0%;
+        width: 100%;
+    }
+
+    .testimonials .carousel-inner h5{
+        margin: 0px 23px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .testimonials .carousel-inner p{
+        margin: 27px 20px;
+    }
+
+    .carousel-indicators li{
+        margin: 2px 10.3px;
+    }
+
+    .downloud h3{
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0 30px;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .downloud h5{
+        font-size: 13px;
+        line-height: 15px;
+        margin: 0 42px;
+        padding-top: 22px;
+    }
+
+    .downloud button{
+        margin-top: 14px;
+        width: 280.15px;
+        margin-bottom: 45px;
+    }
+
+    footer .row{
+        flex-direction: column;
+    }
+
+    footer .card{
+        width: 100%;
+    }
+
+    footer .card h5{
+        padding-top: 34px;
+    }
+
+    footer .card h5:last-child{
+        padding-top: 28px;
+        padding-bottom: 35px;
+        margin: 0px 31px;
+    }
+
+    footer .card a{
+        margin: 3px 7px;
+    }
+
+    footer .card .share{
+        margin-bottom: 22px;
+    }
+
+    footer .copyright{
+        height: 90px;
+        margin-top: 0px;
+    }
+
+    footer div .copyright h5{
+        margin: 30px 20px;
+    }
+    
+
     
   }
