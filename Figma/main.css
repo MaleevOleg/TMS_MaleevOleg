@@ -96,14 +96,18 @@ button:active{
  
 }
 
-header.container{
-    background:  url(img/bg.png) no-repeat center top;
-    background-size:contain;
-    height: 747px;
+header{
+    max-width: 1510px;
+    margin: 0 auto;
+}
 
-    padding: 0 170px;
-    /* max-width: 100%;
-    height: auto; */ 
+header .container{
+    background:  url(img/bg.png) no-repeat center top;
+    
+
+    padding: 0;
+    max-width: 100%;
+    height: 747px; 
 
 }
 
@@ -111,10 +115,12 @@ header.container{
 .navbar-nav{
     align-items: center;
     text-align: center;
+    
 }
 
 nav.navbar{
     border-bottom: 1px solid #BABBC5;
+    margin: 0 170px;
     padding: 0;
 }
 
@@ -148,6 +154,10 @@ nav.navbar{
     color:#E71414;
     padding-bottom: 40px;
     padding-top: 41px;
+}
+
+.baner{
+    margin: 0 170px;
 }
 
 header h1{
@@ -344,18 +354,23 @@ height:678px;
     
 }
 
-.our-team .row{
+.our-team .container{
     width: 1170px;
+    padding: 0;
+}
+
+.our-team .row{
     height: 730px;
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .our-team .col-3{
     width: 270px;
-    height: 619px;
+    /* height: 619px; */
+    margin-right: 8px;
 }
 
 .our-team .col-3:last-child{
@@ -396,6 +411,7 @@ height:678px;
     padding-top: 10px;
     text-align: inherit;
     color: #6C7279;
+    margin-right: 12px;
 }
 
 .our-team .link{
@@ -588,8 +604,283 @@ footer div h5 span{
     }
   }
 
-  /* @media (min-width: 992px) {
+  @media (max-width: 1024px) {
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
       max-width: 1024px;
     }
-  } */
+    nav.navbar{
+        margin: 0 20px;
+    }
+    .logo{
+        margin-left: 0.05rem;
+    }
+
+    .nav-item {
+        width: 112px;
+    }
+
+    .navbar-nav .nav-item a{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .baner{
+        margin: 0 40px;
+    }
+
+    header .container{
+        background-size: cover;
+        height: 768px;
+
+    }
+
+    header h1{
+        margin-top: 29px;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    header h2{
+        margin: 37px 90px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+
+    }
+
+    header button{
+        width:313.15px;
+        height:77.58px;
+        margin-top: 90px;
+
+    }
+
+    
+
+    .features {
+        padding: 78px 0px 0px 0px;
+    }
+
+    .features .container {
+        height: auto;
+        padding-bottom: 32px;
+
+    }
+    .features .card {
+        width: 32.7%;
+        height: 237px;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .features .card-body {
+        padding-top: 8px;
+    }
+
+    .features .card-img-top{
+        width: 85px;
+        height: 85px;
+    }
+
+    .features h5{
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+
+    }
+
+    .features p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 12px;
+        margin: 0px 16px;
+
+    }
+
+    .works .container{
+        padding: 0;
+    }
+
+    .works .row{
+         height: auto;
+         width: auto;
+    }
+
+    .works .work{
+
+        width:256.34px;
+        height: 230.57px;
+    }
+    .work div{
+        background-size: contain;
+    }
+
+
+
+    .our-team {
+        padding-top: 75px;
+    }
+    
+    
+    .our-team .container{
+        width: 984.08px;
+    }
+
+    .our-team .row{
+        width: auto;
+        height: auto;
+    }
+
+    .our-team .col-3{
+        margin-right: 6px;
+    }
+
+    .our-team .row .card-img-top {
+        width: 227.08px;
+        height: 227.08px;
+    }
+
+    .our-team h5{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        padding-top: 28px;
+
+
+    }
+
+    .our-team h6{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+    }
+
+    .our-team p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 15px;
+    }
+
+    .our-team .link {
+        padding-top: 22px;
+        padding-right: 0;
+    }
+
+    .our-team img{
+        width: 32.8px;
+        height: 32.8px;
+    }
+
+    .testimonials{
+        padding-top: 5rem;
+    }
+
+    .w-50 {
+        width: 49%!important;
+    }
+
+    .testimonials .carousel-inner h5{
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0px 90px;
+        margin-top: 40px;
+    }
+    
+    .testimonials .carousel-inner p{
+        font-size: 12px;
+        line-height: 14px;
+        margin: 17px 88px;
+    }
+
+    .carousel-indicators{
+        width: auto;
+    }
+
+    .carousel-indicators li {
+        width: 7px;
+        height: 7px;
+        margin: 0 13.1px;
+    }
+
+    .downloud h3{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 94px;
+    }
+
+    .downloud h5{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .downloud button{
+        width: 313.15px;
+        height: 77.58px;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 78px;
+        margin-top: 47px;
+    }
+
+    footer .container{
+        height: auto;
+    }
+
+    footer .card {
+        width: 31.7%;
+    }
+
+    footer .card h5{
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 46px;
+    }
+
+    footer .card h5:last-child{
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0px 12px;
+    }
+
+    footer .card .share{
+        margin-top: 26px;
+    }
+
+    footer .card a {
+        margin: 0px 11px;
+        width: 33px;
+        height: 33px;
+    }
+
+    footer .card img{
+        width: 33px;
+        height: 33px;
+    }
+
+    
+    footer .copyright {
+        height: 60px;
+        margin-top: 41px;
+
+    }
+
+    footer div .copyright h5{
+        font-size: 14px;
+        line-height: 16px;
+        width: 350px;
+        margin: 14px 0;
+
+    }
+
+  }
+
+
+  @media (max-width: 1023px){
+    
+  }
